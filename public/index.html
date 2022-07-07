@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGames</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- DESKTOP -->
+    <section class="nextGame--bar">
+        <div class="nextGame--items">
+            <img src="../assets/logo.png" alt="">
+            <input type="text" class="nextGame--items__input">
+            <div class="nextGame--items__whatsapp">
+                <p>Whatsapp</p>
+                <p>+XXXXXXXXXXXXX</p>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!-- MOBILE -->
+     <!-- <section class="nextGame--bar-mobile">
+        <div>
+            <div class="dropdown">
+                <button class="btn btn-cart-color dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-justify" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+                
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <div class="main__filtros dropdown-item">
+                        <h3>Categorias</h3>
+                        <div class="main__filtros--category">
+                            <h4>VideoJuegos</h4>
+                            <p>Consolas y Accesorios <span id="consolas"></span></p>
+                            <p>Juegos Playstation <span id="juegos-ps"></span></p>
+                            <p>Cascos RV<span id="cascos-rv"></span></p>
+                            <p>Consolas Retro <span id="consolas-retro"></span></p>
+                            <p>Joysticks <span id="joysticks"></span></p>
+                            <p>Juegos Switch <span id="juegos-switch"></span></p>
+                            <p>Novedades <span id="novedades"></span></p>
+                            <p>Videojuegos para chicos <span id="videojuegos-chicos"></span></p>
+                            <p>Preventas <span id="preventas"></span></p>
+                        </div>
+                        <div class="main__filtros--marcas">
+                            <h4>Marcas</h4>
+                                <p>Todos</p>
+                                <p>Nacon</p>
+                                <p>Nintendo Switch</p>
+                                <p>Oculus</p>
+                                <p>PS4</p>
+                                <p>PS5</p>
+                                <p>Seagate</p>
+                                <p>XBOX</p>
+                        </div>
+                    </div>
+                </ul>
+              </div>
+        </div>
+        <div class="nextGame--bar-mobile__img">
+            <img src="../assets/logo.png" alt="">
+        </div>
+        <div>
+
+<button type="button" class="btn btn-cart-color" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart"
+    viewBox="0 0 16 16">
+    <path
+        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+</svg>
+  </button>
+  
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="min-height: 90vh; max-height: max-content">
+            <div id="cart">
+                <ul class="cart--titles">
+                    <li>#</li>
+                    <li>Producto</li>
+                    <li>Precio</li>
+                    <li><span></span></li>
+                </ul>
+            </div>
+            <div class="cart--total">
+                <ul>
+                    <li id="total">TOTAL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-principal" data-bs-dismiss="modal">Salir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>  -->
+
+    <div class="navDisable">
+        <nav>
+            <div class="nextGame--navbar">
+                <button class="nextGame--navbar__button">Categorias</button>
+                <div class="nextGame--navbar__submenu">
+                    <ul>
+                        <li>Hot Sale</li>
+                        <li>Marcas</li>
+                        <li>Contacto</li>
+                        <li>Mis Pedidos</li>
+                    </ul>
+                </div>
+                <div class="nextGame--navbar__icons">
+                    <div class="dropdown-center">
+                        <button class="btn btn-color dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg>
+                        </button>
+                            <div class="cart dropdown-menu">
+                                <div id="cart" >
+                                    <ul class="cart--titles">
+                                        <li>#</li>
+                                        <li>Producto</li>
+                                        <li>Precio</li>
+                                        <li><span></span></li>
+                                    </ul>
+                                </div>
+                                <div class="cart--total">
+                                    <ul>
+                                        <li id="total">TOTAL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                      </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="border"></div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="products--container">
+            <div class="main--container">
+                <div class="main__filtros">
+                    <h3>Categorias</h3>
+                    <div class="main__filtros--category">
+                        <h4>VideoJuegos</h4>
+                        <p>Consolas y Accesorios <span id="consolas"></span></p>
+                        <p>Juegos Playstation <span id="juegos-ps"></span></p>
+                        <p>Cascos RV<span id="cascos-rv"></span></p>
+                        <p>Consolas Retro <span id="consolas-retro"></span></p>
+                        <p>Joysticks <span id="joysticks"></span></p>
+                        <p>Juegos Switch <span id="juegos-switch"></span></p>
+                        <p>Novedades <span id="novedades"></span></p>
+                        <p>Videojuegos para chicos <span id="videojuegos-chicos"></span></p>
+                        <p>Preventas <span id="preventas"></span></p>
+                    </div>
+                    <div class="main__filtros--marcas">
+                        <h4>Marcas</h4>
+                            <p>Todos</p>
+                            <p>Nacon</p>
+                            <p>Nintendo Switch</p>
+                            <p>Oculus</p>
+                            <p>PS4</p>
+                            <p>PS5</p>
+                            <p>Seagate</p>
+                            <p>XBOX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videogames--container">
+                <div class="videogames__items--container" id="videogames">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/products.js" type="module"></script>
+    <script src="../js/addToCart.js" type="module"></script>
+    <script src="../js/filters.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
