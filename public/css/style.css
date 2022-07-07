@@ -53,6 +53,7 @@ html {
     height: 50px;
 }
 
+
 .nextGame--items__input {
     width: 500px;
     height: 40px;
@@ -80,6 +81,10 @@ html {
 
 navbar {
     background-color: var(--bg);
+}
+
+.navbar--image {
+    display: none;
 }
 
 .nextGame--navbar {
@@ -319,28 +324,48 @@ main {
         display: none;
     }
 
-    .nextGame--bar-mobile {
-        display: block;
-        background-color: var(--navbar-bg);
-        display: flex;
-        justify-content: center;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
-    .nextGame--bar-mobile__img {
-        display: flex;
-        justify-content: center;
-    }
-
-    .nextGame--bar-mobile__img img {
-        width: 75%;
-        margin: 0 auto;
-    }
-
+    
     .navDisable {
+        background-color: var(--navbar-bg);
+    }
+
+    .nextGame--navbar {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 0px 20px;
+        align-items: center;
+    }
+
+    .nextGame--navbar__button {
         display: none;
+    }
+
+
+    .nextGame--navbar__submenu ul {
+        display: none;
+    }
+
+    .navbar--image {
+        display: block;
+        padding: 20px;
+        order: 2;
+    }
+
+    .navbar--image img {
+        width: 70%;
+        max-width: 200px;
+    }
+
+    .nextGame--navbar__icons {
+        color: white;
+        order: 1;
+    }
+
+    .nextGame--navbar__icons button svg {
+        color: white;
     }
 
 
@@ -378,8 +403,10 @@ main {
     } 
     
     .cart {
-        width: 100%;
-        min-height: 100vh;
+        width: 90vw;
+        min-height: 90vh;
+        border: none;
+        padding: 0;
     }
 
     .cart--total {
