@@ -37,14 +37,13 @@ export const addToCart = (e) => {
 export const removeItem = (e) => {
     const target = e.target
     const removeItemSelected = target.parentElement.parentElement
-    const priceItemRemoved = document.querySelector("#price-product").textContent
+    const priceItemRemoved = removeItemSelected.querySelector("#price-product").textContent
     const newPrice = priceItemRemoved.slice(1)
     const priceProduct = Number(newPrice)
     const cart = document.getElementById("cart")
     cart.removeChild(removeItemSelected)
     price.push(-priceProduct)
     totalShop(price.reduce((acc, val) => acc + val))
-    
   }
 
 
